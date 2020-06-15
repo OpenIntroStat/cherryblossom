@@ -1,5 +1,5 @@
 Package: cherryblossom
-Title: What the Package Does (One Line, Title Case)
+Title: Cherry Blossom Run Race Results
 Version: 0.0.0.9000
 Authors@R: 
     person(given = "Mine",
@@ -7,9 +7,10 @@ Authors@R:
            role = c("aut", "cre"),
            email = "cetinkaya.mine@gmail.com",
            comment = c(ORCID = "0000-0001-6452-2420"))
-Description: What the package does (one paragraph).
+Description: Race results of the Cherry Blossom Run, which is an annual road race that takes place in Washington, DC.
 License: MIT + file LICENSE
 Suggests: 
+    ggplot2,
     testthat
 Encoding: UTF-8
 LazyData: true
@@ -17,3 +18,5 @@ Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.0
 URL: https://github.com/OpenIntroStat/cherryblossom
 BugReports: https://github.com/OpenIntroStat/cherryblossom/issues
+Depends: 
+    R (>= 2.10)
