@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# cherryblossom <a href="https://github.com/OpenIntroStat/cherryblossom/blob/master/man/figures/cherryblossom-hex.png" align="right" height="135" /></a>
+# cherryblossom <a href="https://openintrostat.github.io/cherryblossom"><img src="https://github.com/OpenIntroStat/cherryblossom/blob/master/man/figures/cherryblossom-hex.png?raw=true" align="right" height="170" /></a>
 
 <!-- badges: start -->
 
@@ -11,10 +11,10 @@ status](https://www.r-pkg.org/badges/version/cherryblossom)](https://CRAN.R-proj
 status](https://github.com/OpenIntroStat/cherryblossom/workflows/R-CMD-check/badge.svg)](https://github.com/OpenIntroStat/cherryblossom/actions)
 <!-- badges: end -->
 
-This package contains data from the Cherry Blossom Run, which is an
-annual road race that takes place in Washington, DC. All data come from
-the [Chery Blossom Race
-Results](http://www.cherryblossom.org/aboutus/results.php) page.
+This package contains data from the [Cherry Blossom
+Run](http://www.cherryblossom.org/), which is an annual road race that
+takes place in Washington, DC. All data come from the [Chery Blossom
+Race Results](http://www.cherryblossom.org/aboutus/results.php) page.
 
 ## cherryblossom and openintro
 
