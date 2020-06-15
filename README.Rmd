@@ -13,7 +13,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-# cherryblossom <a href='https://openintrostat.github.io/cherryblossom'><img src='man/figures/logo.png' align="right" height="67.5" /></a>
+# cherryblossom <a href="https://github.com/OpenIntroStat/cherryblossom/blob/master/man/figures/cherryblossom-hex.png" align="right" height="135" /></a>
 
 <!-- badges: start -->
 [![CRAN status](https://www.r-pkg.org/badges/version/cherryblossom)](https://CRAN.R-project.org/package=cherryblossom)
