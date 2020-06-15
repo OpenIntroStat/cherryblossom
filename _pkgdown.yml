@@ -1,17 +1,18 @@
 url: https://openintrostat.github.io/cherryblossom
 
 home:
-  strip_header: true
   links:
     - text: Learn more
       href: https://www.openintro.org
 
 navbar:
-  components:
-    home: ~
-    intro:
-      text: OpenIntro
-      href: https://www.openintro.org
+  left:
+  - text: OpenIntro
+    href: https://www.openintro.org
+  - text: Reference
+    href: reference/index.html
+  - text: Code of Conduct
+    href: CODE_OF_CONDUCT.html
 
 reference:
 - title: Datasets
