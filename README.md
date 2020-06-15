@@ -9,6 +9,8 @@
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
 [![CRAN
 status](https://www.r-pkg.org/badges/version/cherryblossom)](https://CRAN.R-project.org/package=cherryblossom)
+[![R build
+status](https://github.com/OpenIntroStat/cherryblossom/workflows/R-CMD-check/badge.svg)](https://github.com/OpenIntroStat/cherryblossom/actions)
 <!-- badges: end -->
 
 This package contains data from the Cherry Blossom Run, which is an
