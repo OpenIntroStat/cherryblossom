@@ -8,13 +8,6 @@
 
 <title>Cherry Blossom Run data, 2012 — run12 • cherryblossom</title>
 
-<!-- favicons -->
-<link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
-<link rel="apple-touch-icon" type="image/png" sizes="180x180" href="../apple-touch-icon.png" />
-<link rel="apple-touch-icon" type="image/png" sizes="120x120" href="../apple-touch-icon-120x120.png" />
-<link rel="apple-touch-icon" type="image/png" sizes="76x76" href="../apple-touch-icon-76x76.png" />
-<link rel="apple-touch-icon" type="image/png" sizes="60x60" href="../apple-touch-icon-60x60.png" />
 
 <!-- jquery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
@@ -49,7 +42,6 @@
 <meta property="og:title" content="Cherry Blossom Run data, 2012 — run12" />
 <meta property="og:description" content="Details for all 16,924 runners in the 2012 Cherry Blossom Run,
 which is an annual road race that takes place in Washington, DC." />
-<meta property="og:image" content="https://openintrostat.github.io/cherryblossom/logo.png" />
 
 
 
@@ -124,7 +116,7 @@ which is an annual road race that takes place in Washington, DC." />
 which is an annual road race that takes place in Washington, DC.</p>
     </div>
 
-    <pre class="usage"><span class='no'>run12</span></pre>
+    <pre class="usage"><span class='kw'>run12</span></pre>
 
 
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
@@ -148,25 +140,24 @@ which is an annual road race that takes place in Washington, DC.</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>
-<span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='no'>ggplot2</span>)
+<span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='kw'><a href='http://ggplot2.tidyverse.org'>ggplot2</a></span>)
 
 <span class='co'># Finishing times</span>
-<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span>(<span class='no'>run12</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='no'>time</span>)) +
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_histogram.html'>geom_histogram</a></span>(<span class='kw'>binwidth</span> <span class='kw'>=</span> <span class='fl'>5</span>) +
+<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span>(<span class='kw'>run12</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span>(x = <span class='kw'>time</span>)) <span class='op'>+</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_histogram.html'>geom_histogram</a></span>(binwidth = <span class='fl'>5</span>) <span class='op'>+</span>
   <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span>(
-    <span class='kw'>title</span> <span class='kw'>=</span> <span class='st'>"Finishing times for 2012 Cherry Blossom Run,"</span>,
-    <span class='kw'>x</span> <span class='kw'>=</span> <span class='st'>"Time to complete the race, in minutes"</span>,
-    <span class='kw'>y</span> <span class='kw'>=</span> <span class='st'>"Frequency"</span>
+    title = <span class='st'>"Finishing times for 2012 Cherry Blossom Run,"</span>,
+    x = <span class='st'>"Time to complete the race, in minutes"</span>,
+    y = <span class='st'>"Frequency"</span>
     )</div><div class='img'><img src='run12-1.png' alt='' width='700' height='433' /></div><div class='input'>
 <span class='co'># Pacing</span>
-<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span>(<span class='no'>run12</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='no'>pace</span>)) +
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_histogram.html'>geom_histogram</a></span>(<span class='kw'>binwidth</span> <span class='kw'>=</span> <span class='fl'>0.5</span>) +
+<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span>(<span class='kw'>run12</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span>(x = <span class='kw'>pace</span>)) <span class='op'>+</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_histogram.html'>geom_histogram</a></span>(binwidth = <span class='fl'>0.5</span>) <span class='op'>+</span>
   <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span>(
-    <span class='kw'>title</span> <span class='kw'>=</span> <span class='st'>"Pacing for 2012 Cherry Blossom Run"</span>,
-    <span class='kw'>x</span> <span class='kw'>=</span> <span class='st'>"Average time per mile, in minutes"</span>,
-    <span class='kw'>y</span> <span class='kw'>=</span> <span class='st'>"Frequency"</span>
-    )</div><div class='img'><img src='run12-2.png' alt='' width='700' height='433' /></div><div class='input'>
-</div></pre>
+    title = <span class='st'>"Pacing for 2012 Cherry Blossom Run"</span>,
+    x = <span class='st'>"Average time per mile, in minutes"</span>,
+    y = <span class='st'>"Frequency"</span>
+    )</div><div class='img'><img src='run12-2.png' alt='' width='700' height='433' /></div><div class='input'></div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
