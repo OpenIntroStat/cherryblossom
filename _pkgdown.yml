@@ -1,0 +1,19 @@
+home:
+  strip_header: true
+  links:
+    - text: Learn more
+      href: https://www.openintro.org
+
+navbar:
+  components:
+    home: ~
+    intro:
+      text: OpenIntro
+      href: https://www.openintro.org
+
+reference:
+- title: Datasets
+  contents:
+  - run09
+  - run12
+  - run17
