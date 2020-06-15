@@ -13,7 +13,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-# cherryblossom <a href="https://openintrostat.github.io/cherryblossom"><img src="https://github.com/OpenIntroStat/cherryblossom/blob/master/man/figures/cherryblossom-hex.png?raw=true" align="right" height="170" /></a>
+# cherryblossom <a href="https://openintrostat.github.io/cherryblossom"><img src="man/figures/cherryblossom-hex.png" align="right" height="170" /></a>
 
 <!-- badges: start -->
 [![CRAN status](https://www.r-pkg.org/badges/version/cherryblossom)](https://CRAN.R-project.org/package=cherryblossom)
@@ -71,4 +71,5 @@ The flowers in the hex are from [Floral vector created by macrovector - www.free
 
 ## Code of Conduct
   
-Please note that the cherryblossom project is released with a [Contributor Code of Conduct](https://contributor-covenant.org/version/2/0/CODE_OF_CONDUCT.html). By contributing to this project, you agree to abide by its terms.
+Please note that the cherryblossom project is released with a [Contributor Code of Conduct](https://contributor-covenant.org/version/2/0/CODE_OF_CONDUCT.html). 
+By contributing to this project, you agree to abide by its terms.

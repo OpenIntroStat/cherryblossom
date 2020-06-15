@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# cherryblossom <a href="https://openintrostat.github.io/cherryblossom"><img src="https://github.com/OpenIntroStat/cherryblossom/blob/master/man/figures/cherryblossom-hex.png?raw=true" align="right" height="170" /></a>
+# cherryblossom <a href="https://openintrostat.github.io/cherryblossom"><img src="man/figures/cherryblossom-hex.png" align="right" height="170" /></a>
 
 <!-- badges: start -->
 
