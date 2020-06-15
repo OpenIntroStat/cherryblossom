@@ -8,7 +8,7 @@ Authors@R:
            email = "cetinkaya.mine@gmail.com",
            comment = c(ORCID = "0000-0001-6452-2420"))
 Description: Race results of the Cherry Blossom Run, which is an annual road race that takes place in Washington, DC.
-License: MIT + file LICENSE
+License: GPL-3
 Suggests: 
     ggplot2,
     testthat
