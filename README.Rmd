@@ -24,13 +24,6 @@ knitr::opts_chunk$set(
 This package contains data from the [Cherry Blossom Run](http://www.cherryblossom.org/), which is an annual road race that takes place in Washington, DC.
 All data come from the [Chery Blossom Race Results](http://www.cherryblossom.org/aboutus/results.php) page.
 
-## cherryblossom and openintro
-
-The datasets from this package are used in [OpenIntro]() textbooks and other  resources.
-These datasets originally lived in the [**openintro**]() package, up until openintro 2.0.0.
-The motivation for extracting these datasets out of the openintro package was to create a new package where we can continue to add more data from the Cherry Blossom race results.
-For those looking for a seamless experience with OpenIntro resources, note that the contents of this package will be loaded along with the openintro package as well, so that you can run `library(openintro)` and use the datasets from cherryblossom.
-
 ## Installation
 
 You can install the development version of cherryblossom from GitHub with:
@@ -50,6 +43,13 @@ install.packages("cherryblossom")
 ## Usage
 
 The datasets from this package can be used in a teaching context for data visualisation and data manipulation exercises. The columns of the datasets from various years are not consistent, they're provided in the same format the Cherry Blossom run organisers release the data.
+
+## cherryblossom and openintro
+
+The datasets from this package are used in [OpenIntro]() textbooks and other  resources.
+These datasets originally lived in the [**openintro**]() package, up until openintro 2.0.0.
+The motivation for extracting these datasets out of the openintro package was to create a new package where we can continue to add more data from the Cherry Blossom race results.
+For those looking for a seamless experience with OpenIntro resources, note that the contents of this package will be loaded along with the openintro package as well, so that you can run `library(openintro)` and use the datasets from cherryblossom.
 
 ## Questions, bugs, feature requests
 
