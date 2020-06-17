@@ -9,10 +9,8 @@
 #' figure out what that time is?
 #'
 #' @name run17
-#' @aliases run17samp
 #' @docType data
 #' @format A data frame with 19,961 observations on the following 9 variables.
-#' (\code{run17samp} is a random sample of 100 observations from this data frame.)
 #' \describe{
 #'   \item{bib}{Number on the runner's bib.}
 #'   \item{name}{Name of the runner, with only the initial of their last name.}

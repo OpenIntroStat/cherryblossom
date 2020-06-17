@@ -46,7 +46,7 @@ ggplot(run09, aes(x = time, y = gender)) +
     y = "Gender"
     )
 
-#' Pacing times by gender
+# Pacing times by gender
 ggplot(run09, aes(x = pace, y = gender)) +
   geom_boxplot() +
   labs(
