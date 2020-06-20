@@ -9,6 +9,6 @@
 
 ## R CMD check results
 
-0 errors | 0 warnings | 0 note
+There were no ERRORs or WARNINGs.
 
-* This is a new release.
+There was 1 NOTE: New submission.
