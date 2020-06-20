@@ -1,6 +1,6 @@
 #' Cherry Blossom Run data, 2009
 #'
-#' Details for all 14,974 runners in the 2017 Cherry Blossom Run,
+#' Details for all 14,974 runners in the 2009 Cherry Blossom Run,
 #' which is an annual road race that takes place in Washington, DC.
 #'
 #'
@@ -33,7 +33,7 @@
 #' ggplot(run09, aes(x = time, y = gender)) +
 #'   geom_boxplot() +
 #'   labs(
-#'     title = "Finishing times for 2012 Cherry Blossom Run, by gender",
+#'     title = "Finishing times for 2009 Cherry Blossom Run, by gender",
 #'     x = "Time to complete the race, in minutes",
 #'     y = "Gender"
 #'     )
@@ -42,7 +42,7 @@
 #' ggplot(run09, aes(x = pace, y = gender)) +
 #'   geom_boxplot() +
 #'   labs(
-#'     title = "Pacing for 2012 Cherry Blossom Run, by gender",
+#'     title = "Pacing for 2009 Cherry Blossom Run, by gender",
 #'     x = "Average time per mile, in minutes",
 #'     y = "Gender"
 #'     )
