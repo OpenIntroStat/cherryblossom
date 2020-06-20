@@ -43,15 +43,17 @@ same format the Cherry Blossom run organizers release the data.
 
 ## cherryblossom and openintro
 
-The datasets from this package are used in [OpenIntro]() textbooks and
-other resources. These datasets originally lived in the
-[**openintro**]() package, up until openintro 2.0.0. The motivation for
-extracting these datasets out of the openintro package was to create a
-new package where we can continue to add more data from the Cherry
-Blossom race results. For those looking for a seamless experience with
-OpenIntro resources, note that the contents of this package will be
-loaded along with the openintro package as well, so that you can run
-`library(openintro)` and use the datasets from cherryblossom.
+The datasets from this package are used in
+[OpenIntro](https://www.openintro.org/) textbooks and other resources.
+These datasets originally lived in the
+[**openintro**](http://openintrostat.github.io/openintro/) package, up
+until openintro 2.0.0. The motivation for extracting these datasets out
+of the openintro package was to create a new package where we can
+continue to add more data from the Cherry Blossom race results. For
+those looking for a seamless experience with OpenIntro resources, note
+that the contents of this package will be loaded along with the
+openintro package as well, so that you can run `library(openintro)` and
+use the datasets from cherryblossom.
 
 ## Questions, bugs, feature requests
 
