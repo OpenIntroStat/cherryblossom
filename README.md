@@ -18,20 +18,20 @@ Race Results](http://www.cherryblossom.org/aboutus/results.php) page.
 
 ## Installation
 
-You can install the development version of cherryblossom from GitHub
+You can install the package from [CRAN](https://CRAN.R-project.org)
 with:
+
+``` r
+install.packages("cherryblossom")
+```
+
+Additionally, you can install the development version of cherryblossom
+from GitHub with:
 
 ``` r
 #install.packages("devtools")
 library(devtools)
 install_github("OpenIntroStat/cherryblossom")
-```
-
-Once the package is on CRAN, you can install the released version of
-cherryblossom from [CRAN](https://CRAN.R-project.org) with:
-
-``` r
-install.packages("cherryblossom")
 ```
 
 ## Usage
