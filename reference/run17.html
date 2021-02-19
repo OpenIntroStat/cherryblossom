@@ -75,7 +75,7 @@ or walk." />
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">cherryblossom</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.0.9000</span>
       </span>
     </div>
 
@@ -117,7 +117,7 @@ participate in a 10-mile run while a smaller fraction take part in a 5k run
 or walk.</p>
     </div>
 
-    <pre class="usage"><span class='kw'>run17</span></pre>
+    <pre class="usage"><span class='va'>run17</span></pre>
 
 
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
@@ -145,27 +145,30 @@ figure out what that time is?</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>
-<span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='kw'><a href='http://ggplot2.tidyverse.org'>ggplot2</a></span>)
+<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://ggplot2.tidyverse.org'>ggplot2</a></span><span class='op'>)</span>
 
 <span class='co'># Finishing times</span>
-<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span>(<span class='kw'>run17</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span>(x = <span class='kw'>net_sec</span>)) <span class='op'>+</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_histogram.html'>geom_histogram</a></span>(binwidth = <span class='fl'>300</span>) <span class='op'>+</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/facet_wrap.html'>facet_wrap</a></span>(<span class='op'>~</span><span class='kw'>event</span>, nrow = <span class='fl'>2</span>) <span class='op'>+</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span>(
-    title = <span class='st'>"Finishing times for 2017 Cherry Blossom Run, by event"</span>,
-    subititle = <span class='st'>"After accounting for the staggered starting time"</span>,
-    x = <span class='st'>"Time to complete the race, in seconds"</span>,
-    y = <span class='st'>"Frequency"</span>
-    )</div><div class='output co'>#&gt; <span class='warning'>Warning: Removed 3 rows containing non-finite values (stat_bin).</span></div><div class='img'><img src='run17-1.png' alt='' width='700' height='433' /></div><div class='input'>
+<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span><span class='op'>(</span><span class='va'>run17</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='va'>net_sec</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_histogram.html'>geom_histogram</a></span><span class='op'>(</span>binwidth <span class='op'>=</span> <span class='fl'>300</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/facet_wrap.html'>facet_wrap</a></span><span class='op'>(</span><span class='op'>~</span><span class='va'>event</span>, nrow <span class='op'>=</span> <span class='fl'>2</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span><span class='op'>(</span>
+    title <span class='op'>=</span> <span class='st'>"Finishing times for 2017 Cherry Blossom Run, by event"</span>,
+    subititle <span class='op'>=</span> <span class='st'>"After accounting for the staggered starting time"</span>,
+    x <span class='op'>=</span> <span class='st'>"Time to complete the race, in seconds"</span>,
+    y <span class='op'>=</span> <span class='st'>"Frequency"</span>
+    <span class='op'>)</span>
+</div><div class='output co'>#&gt; <span class='warning'>Warning: Removed 3 rows containing non-finite values (stat_bin).</span></div><div class='img'><img src='run17-1.png' alt='' width='700' height='433' /></div><div class='input'>
 <span class='co'># Pacing</span>
-<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span>(<span class='kw'>run17</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span>(x = <span class='kw'>pace_sec</span>)) <span class='op'>+</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_histogram.html'>geom_histogram</a></span>(binwidth = <span class='fl'>100</span>) <span class='op'>+</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/facet_wrap.html'>facet_wrap</a></span>(<span class='op'>~</span><span class='kw'>event</span>, nrow = <span class='fl'>2</span>, scales = <span class='st'>"free_y"</span>) <span class='op'>+</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span>(
-    title = <span class='st'>"Pacing for 2017 Cherry Blossom Run, by event"</span>,
-    x = <span class='st'>"Average time per mile, in seconds"</span>,
-    y = <span class='st'>"Frequency"</span>
-    )</div><div class='output co'>#&gt; <span class='warning'>Warning: Removed 3 rows containing non-finite values (stat_bin).</span></div><div class='img'><img src='run17-2.png' alt='' width='700' height='433' /></div><div class='input'></div></pre>
+<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span><span class='op'>(</span><span class='va'>run17</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='va'>pace_sec</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_histogram.html'>geom_histogram</a></span><span class='op'>(</span>binwidth <span class='op'>=</span> <span class='fl'>100</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/facet_wrap.html'>facet_wrap</a></span><span class='op'>(</span><span class='op'>~</span><span class='va'>event</span>, nrow <span class='op'>=</span> <span class='fl'>2</span>, scales <span class='op'>=</span> <span class='st'>"free_y"</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span><span class='op'>(</span>
+    title <span class='op'>=</span> <span class='st'>"Pacing for 2017 Cherry Blossom Run, by event"</span>,
+    x <span class='op'>=</span> <span class='st'>"Average time per mile, in seconds"</span>,
+    y <span class='op'>=</span> <span class='st'>"Frequency"</span>
+    <span class='op'>)</span>
+</div><div class='output co'>#&gt; <span class='warning'>Warning: Removed 3 rows containing non-finite values (stat_bin).</span></div><div class='img'><img src='run17-2.png' alt='' width='700' height='433' /></div><div class='input'>
+</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
@@ -181,7 +184,7 @@ figure out what that time is?</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.9000.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1.</p>
 </div>
 
       </footer>

@@ -73,7 +73,7 @@ which is an annual road race that takes place in Washington, DC." />
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">cherryblossom</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.0.9000</span>
       </span>
     </div>
 
@@ -113,7 +113,7 @@ which is an annual road race that takes place in Washington, DC." />
 which is an annual road race that takes place in Washington, DC.</p>
     </div>
 
-    <pre class="usage"><span class='kw'>run09</span></pre>
+    <pre class="usage"><span class='va'>run09</span></pre>
 
 
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
@@ -142,24 +142,27 @@ which is an annual road race that takes place in Washington, DC.</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>
-<span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='kw'><a href='http://ggplot2.tidyverse.org'>ggplot2</a></span>)
+<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://ggplot2.tidyverse.org'>ggplot2</a></span><span class='op'>)</span>
 
 <span class='co'># Finishing times by gender</span>
-<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span>(<span class='kw'>run09</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span>(x = <span class='kw'>time</span>, y = <span class='kw'>gender</span>)) <span class='op'>+</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_boxplot.html'>geom_boxplot</a></span>() <span class='op'>+</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span>(
-    title = <span class='st'>"Finishing times for 2009 Cherry Blossom Run, by gender"</span>,
-    x = <span class='st'>"Time to complete the race, in minutes"</span>,
-    y = <span class='st'>"Gender"</span>
-    )</div><div class='img'><img src='run09-1.png' alt='' width='700' height='433' /></div><div class='input'>
+<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span><span class='op'>(</span><span class='va'>run09</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='va'>time</span>, y <span class='op'>=</span> <span class='va'>gender</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_boxplot.html'>geom_boxplot</a></span><span class='op'>(</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span><span class='op'>(</span>
+    title <span class='op'>=</span> <span class='st'>"Finishing times for 2009 Cherry Blossom Run, by gender"</span>,
+    x <span class='op'>=</span> <span class='st'>"Time to complete the race, in minutes"</span>,
+    y <span class='op'>=</span> <span class='st'>"Gender"</span>
+    <span class='op'>)</span>
+</div><div class='img'><img src='run09-1.png' alt='' width='700' height='433' /></div><div class='input'>
 <span class='co'># Pacing times by gender</span>
-<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span>(<span class='kw'>run09</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span>(x = <span class='kw'>pace</span>, y = <span class='kw'>gender</span>)) <span class='op'>+</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_boxplot.html'>geom_boxplot</a></span>() <span class='op'>+</span>
-  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span>(
-    title = <span class='st'>"Pacing for 2009 Cherry Blossom Run, by gender"</span>,
-    x = <span class='st'>"Average time per mile, in minutes"</span>,
-    y = <span class='st'>"Gender"</span>
-    )</div><div class='img'><img src='run09-2.png' alt='' width='700' height='433' /></div><div class='input'></div></pre>
+<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span><span class='op'>(</span><span class='va'>run09</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='va'>pace</span>, y <span class='op'>=</span> <span class='va'>gender</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_boxplot.html'>geom_boxplot</a></span><span class='op'>(</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span><span class='op'>(</span>
+    title <span class='op'>=</span> <span class='st'>"Pacing for 2009 Cherry Blossom Run, by gender"</span>,
+    x <span class='op'>=</span> <span class='st'>"Average time per mile, in minutes"</span>,
+    y <span class='op'>=</span> <span class='st'>"Gender"</span>
+    <span class='op'>)</span>
+</div><div class='img'><img src='run09-2.png' alt='' width='700' height='433' /></div><div class='input'>
+</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
@@ -175,7 +178,7 @@ which is an annual road race that takes place in Washington, DC.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.9000.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1.</p>
 </div>
 
       </footer>
