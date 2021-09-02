@@ -8,6 +8,10 @@
 [![CRAN
 status](https://www.r-pkg.org/badges/version/cherryblossom)](https://CRAN.R-project.org/package=cherryblossom)
 [![R-CMD-check](https://github.com/OpenIntroStat/cherryblossom/workflows/R-CMD-check/badge.svg)](https://github.com/OpenIntroStat/cherryblossom/actions)
+[![Lifecycle:
+stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable)
+[![CRAN RStudio mirror
+downloads](http://cranlogs.r-pkg.org/badges/cherryblossom)](https://cran.r-project.org/package=cherryblossom)
 <!-- badges: end -->
 
 This package contains data from the [Cherry Blossom
