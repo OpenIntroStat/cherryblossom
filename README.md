@@ -7,8 +7,7 @@
 
 [![CRAN
 status](https://www.r-pkg.org/badges/version/cherryblossom)](https://CRAN.R-project.org/package=cherryblossom)
-[![R build
-status](https://github.com/OpenIntroStat/cherryblossom/workflows/R-CMD-check/badge.svg)](https://github.com/OpenIntroStat/cherryblossom/actions)
+[![R-CMD-check](https://github.com/OpenIntroStat/cherryblossom/workflows/R-CMD-check/badge.svg)](https://github.com/OpenIntroStat/cherryblossom/actions)
 <!-- badges: end -->
 
 This package contains data from the [Cherry Blossom
@@ -63,7 +62,7 @@ request.
 When filing an issue to get help or report a bug, please make a minimal
 **repr**oducible **ex**ample using the
 [reprex](https://reprex.tidyverse.org/) package. If you haven’t heard of
-or used reprex before, you’re in for a treat\! See
+or used reprex before, you’re in for a treat! See
 [here](https://www.tidyverse.org/help/) for additional reprex pointers.
 
 Before opening a new issue, be sure to [search issues and pull

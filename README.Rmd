@@ -17,7 +17,7 @@ knitr::opts_chunk$set(
 
 <!-- badges: start -->
 [![CRAN status](https://www.r-pkg.org/badges/version/cherryblossom)](https://CRAN.R-project.org/package=cherryblossom)
-[![R build status](https://github.com/OpenIntroStat/cherryblossom/workflows/R-CMD-check/badge.svg)](https://github.com/OpenIntroStat/cherryblossom/actions)
+[![R-CMD-check](https://github.com/OpenIntroStat/cherryblossom/workflows/R-CMD-check/badge.svg)](https://github.com/OpenIntroStat/cherryblossom/actions)
 <!-- badges: end -->
 
 
