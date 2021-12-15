@@ -1,0 +1,49 @@
+url: https://openintrostat.github.io/cherryblossom
+
+home:
+  title: Data sets and supplemental functions from OpenIntro textbooks and labs
+  description: Supplemental data for OpenIntro resources, including open-source textbooks and resources for introductory statistics.
+  links:
+    - text: Learn more
+      href: https://www.openintro.org
+
+template:
+  bootstrap: 5
+  bslib:
+    primary: "#569BBD"
+    base_font: {google: "Atkinson Hyperlegible"}
+  opengraph:
+    image:
+      src: man/figures/logo.png
+      alt: "Data sets and supplemental functions from OpenIntro textbooks and labs"
+    twitter:
+      creator: "@mine-cetinkaya-rundel"
+      site: "@OpenIntroOrg"
+      card: summary_large_image
+
+authors:
+  Mine Çetinkaya-Rundel:
+    href: "http://mine-cr.com/"
+
+footer:
+  left:
+    structure: [project]
+    components:
+      project: "<b>usdata</b> is an R package developed by the contributors of the <a href='https://www.openintro.org/'>OpenIntro</a> project"
+
+navbar:
+  left:
+  - text: Reference
+    href: reference/index.html
+  right:
+  - text: OpenIntro
+    href: https://www.openintro.org
+  - text: Code of Conduct
+    href: CODE_OF_CONDUCT.html
+
+reference:
+- title: Datasets
+  contents:
+  - run09
+  - run12
+  - run17
